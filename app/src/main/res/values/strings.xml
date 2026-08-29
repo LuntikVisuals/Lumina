@@ -2,4 +2,9 @@
 <resources>
     <string name="app_name">Lumina</string>
     <string name="music_player_description">Beautiful liquid glass music player widget</string>
+    <string name="liquid_clock_description">Elegant liquid glass clock</string>
+    <string name="battery_description">Custom battery indicator with liquid glass style</string>
+    <string name="focus_timer_description">Beautiful focus / pomodoro timer</string>
+    <string name="quote_description">Inspirational quotes in glass style</string>
+    <string name="ambient_description">Ambient mood widget</string>
 </resources>
