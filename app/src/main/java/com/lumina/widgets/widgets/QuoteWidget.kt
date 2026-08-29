@@ -54,7 +54,7 @@ private fun QuoteContent() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "“",
+            text = "\u201C",
             style = TextStyle(
                 fontSize = 28.sp,
                 color = ColorProvider(Color(0xFF8B9CFF))
@@ -67,7 +67,7 @@ private fun QuoteContent() {
             text = quote,
             style = TextStyle(
                 fontSize = 15.sp,
-                fontWeight = FontWeight.Medium,
+                fontWeight = FontWeight.Normal,
                 color = ColorProvider(Color.White)
             )
         )
