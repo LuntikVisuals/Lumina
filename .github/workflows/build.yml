@@ -25,22 +25,15 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew || true
-
-      - name: Generate Gradle Wrapper if missing
+      - name: Create Gradle Wrapper
         run: |
-          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
-            gradle wrapper --gradle-version 8.9 || true
-          fi
+          gradle wrapper --gradle-version 8.9
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: |
-          if [ -f gradlew ]; then
-            ./gradlew assembleDebug --stacktrace
-          else
-            gradle assembleDebug --stacktrace
-          fi
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
