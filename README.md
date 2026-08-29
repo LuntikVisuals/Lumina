@@ -38,9 +38,16 @@
 - [x] Базовая структура проекта
 - [x] Система жидкого стекла (тема)
 - [x] Главный экран
-- [x] Первый виджет (Music Player) — базовая версия
+- [x] Music Player (базовая версия)
+- [x] Liquid Clock
+- [x] Custom Battery
+- [x] Focus Timer
+- [x] Quote
+- [x] Ambient / Mood
 - [x] GitHub Actions (автосборка APK)
-- [ ] Улучшение Music Player + остальные виджеты
+- [ ] Улучшение эффектов + настройки виджетов
+- [ ] Music Player с реальной музыкой
+- [ ] Остальные виджеты (Control Center, Dynamic Island, Aesthetic)
 
 ## Автор
 
