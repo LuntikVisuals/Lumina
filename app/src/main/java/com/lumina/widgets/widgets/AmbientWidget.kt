@@ -64,7 +64,7 @@ private fun AmbientContent() {
             text = mood,
             style = TextStyle(
                 fontSize = 20.sp,
-                fontWeight = FontWeight.SemiBold,
+                fontWeight = FontWeight.Bold,
                 color = ColorProvider(Color.White)
             )
         )
