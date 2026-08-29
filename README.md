@@ -1,2 +1,48 @@
 # Lumina
-Premium Android widgets with liquid glass design — music player, ambient, clock, visualizer and more
+
+**Premium Android widgets with liquid glass design**
+
+Красивые кастомные виджеты в стиле жидкого стекла (glassmorphism / liquid glass).
+
+## Виджеты
+
+1. **Music Player** — полноценный плеер с обложкой и управлением
+2. **Now Playing + Visualizer** — компактный виджет с визуализацией
+3. **Liquid Clock** — часы в стеклянной капсуле
+4. **Ambient / Mood** — атмосферный виджет настроения
+5. **Quote / Thought** — цитаты и мысли
+6. **Custom Battery** — батарея в виде капли/капсулы
+7. **Focus Timer** — красивый таймер фокуса
+8. **Mini Control Center** — быстрые действия
+9. **Dynamic Island-style** — вытянутая стеклянная пилюля
+10. **Pure Aesthetic** — чисто визуальный стеклянный виджет
+
+## Стек
+
+- Kotlin
+- Jetpack Compose
+- Glance (App Widgets)
+- Material 3 + кастомный liquid glass
+- MediaSession (для музыки)
+
+## Как установить
+
+1. Заходи в **Actions**
+2. Скачивай последний артефакт (APK)
+3. Устанавливай на телефон (разреши установку из неизвестных источников)
+
+> Пока автоматическая сборка настраивается — APK будет появляться здесь после каждого важного этапа.
+
+## Статус разработки
+
+- [x] Создание репозитория
+- [ ] Базовая структура проекта
+- [ ] Система жидкого стекла (тема)
+- [ ] Главный экран
+- [ ] Первый виджет (Music Player)
+- [ ] Остальные виджеты
+- [ ] GitHub Actions (автосборка APK)
+
+## Автор
+
+LuntikVisuals
