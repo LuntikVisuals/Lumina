@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,10 +41,29 @@ jobs:
             gradle assembleDebug --stacktrace --no-daemon
           fi
 
+      - name: Prepare release APK
+        if: success()
+        run: |
+          mkdir -p release
+          cp app/build/outputs/apk/debug/*.apk release/Lumina.apk
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         if: success()
         with:
           name: lumina-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: release/Lumina.apk
           retention-days: 14
+
+      - name: Create / Update GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: success()
+        with:
+          tag_name: latest
+          name: Lumina latest
+          body: Автосборка для LuntikStore
+          files: release/Lumina.apk
+          draft: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
